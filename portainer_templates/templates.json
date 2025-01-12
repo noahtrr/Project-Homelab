@@ -1,0 +1,167 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "type": 2,
+            "title": "RomM",
+            "description": "Scan, enrich, and browse your game collection with a clean and responsive interface. With support for multiple platforms, various naming schemes and custom tags, RomM is a must-have for anyone who plays on emulators.",
+            "repository": {
+                "url": "https://github.com/noahtrr/Project-Homelab",
+                "stackfile": "docker_stacks/RomM/docker-stack.yaml"
+            },
+            "administrator_only": false,
+            "name": "romm",
+            "logo": "https://github.com/noahtrr/Private-Docker/blob/main/assets/romm-dark.svg",
+            "note": "<a href='https://github.com/rommapp/romm/' target='_blank' rel='noopener'>The RomM Project on GitHub</a>",
+            "categories": ["Gaming", "organizing", "open-source"],
+            "env": [
+                {
+                    "name": "DB_PASSWORD",
+                    "label": "Database Password",
+                    "description": "Use a unique, secure password"
+                },
+                {
+                    "name": "AUTH_KEY",
+                    "label": "Authentication Key",
+                    "description": "Generate a key with `openssl rand -hex 32`"
+                },
+                {
+                    "name": "IGDB_CLIENT_ID",
+                    "label": "IGDB Client ID",
+                    "description": "Generate an ID and SECRET in IGDB"
+                },
+                {
+                    "name": "IGDB_CLIENT_SECRET",
+                    "label": "IGDB Client Secret",
+                    "description": "https://api-docs.igdb.com/#account-creation"
+                },
+                {
+                    "name": "MOBYGAMES_API_KEY",
+                    "label": "Mobygames API Key",
+                    "description": "https://www.mobygames.com/info/api/"
+                },
+                {
+                    "name": "STEAMGRIDDB_API_KEY",
+                    "label": "SteamgridDB API Key",
+                    "description": "https://github.com/rommapp/romm/wiki/Generate-API-Keys#steamgriddb"
+                },
+                {
+                    "name": "LIBRARY",
+                    "label": "Library Path",
+                    "description": "The filepath on your system which points to the path of RomMs library.",
+                    "default": "/path/to/library"
+                },
+                {
+                    "name": "ASSETS",
+                    "label": "Asset Path",
+                    "description": "The filepath on your system which points to the path of RomMs assets.",
+                    "default": "/path/to/assets"
+                },
+                {
+                    "name": "CONFIG",
+                    "label": "Configuration Path",
+                    "description": "The filepath on your system which points to the path of RomMs configuration.",
+                    "default": "/path/to/config"
+                },
+                {
+                    "name": "HOST_PORT",
+                    "label": "Host Port",
+                    "description": "The Port RomM should use on the host side.",
+                    "default": "8080"
+                },
+                {
+                    "name": "RP_ROMM",
+                    "label": "Restart Policy",
+                    "description": "What restart policy should RomM have?",
+                    "select": [
+                        {
+                            "text": "Always",
+                            "value": "always",
+                            "default": true
+                        },
+                        {
+                            "text": "Unless Stopped",
+                            "value": "unless-stopped"
+                        },
+                        {
+                            "text": "On Failure",
+                            "value": "on-failure"
+                        }
+                    ]
+                },
+                {
+                    "name": "DB_ROOT_PASSWD",
+                    "label": "Database Root Password",
+                    "description": "Use a unique, secure password"
+                },
+                {
+                    "name": "RP_DB",
+                    "label": "Restart Policy",
+                    "description": "What restart policy should RomMs database have?",
+                    "select": [
+                        {
+                            "text": "Always",
+                            "value": "always",
+                            "default": true
+                        },
+                        {
+                            "text": "Unless Stopped",
+                            "value": "unless-stopped"
+                        },
+                        {
+                            "text": "On Failure",
+                            "value": "on-failure"
+                        }
+                    ]
+                },
+                {
+                    "name": "TZ",
+                    "label": "Timezone",
+                    "description": "Sets the timezone.",
+                    "default": "Europe/Berlin"
+                },
+                {
+                    "name": "OIDC_ENABLED",
+                    "label": "Enable Open ID Connect?",
+                    "description": "Do you want to enable the OIDC feature?",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true"
+                        },
+                        {
+                            "text": "No",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
+                    "name": "OIDC_PROVIDER",
+                    "label": "OIDC Provider",
+                    "description": "The lowercase name of the provider"
+                },
+                {
+                    "name": "OIDC_CLIENT_ID",
+                    "label": "OIDC Client ID",
+                    "description": "The client ID copied from the OIDC application."
+                },
+                {
+                    "name": "OIDC_CLIENT_SECRET",
+                    "label": "OIDC Client Secret",
+                    "description": "The client secret copied from the OIDC application."
+                },
+                {
+                    "name": "OIDC_REDIRECT_URI",
+                    "label": "OIDC Redirect URI",
+                    "description": "The redirect URI configured in the OIDC provider, in the format."
+                },
+                {
+                    "name": "OIDC_SERVER_APPLICATION_URL",
+                    "label": "OIDC Server App URL",
+                    "description": "The URL of the OIDC application pointing to RomM."
+                }
+            ]
+        }
+    ]
+}
