@@ -6,7 +6,7 @@
             "title": "RomM",
             "description": "Scan, enrich, and browse your game collection with a clean and responsive interface. With support for multiple platforms, various naming schemes and custom tags, RomM is a must-have for anyone who plays on emulators.",
             "repository": {
-                "url": "https://github.com/noahtrr/Project-Homelab",
+                "url": "https://github.com/noahtrr/Private-Docker",
                 "stackfile": "docker_stacks/RomM/docker-stack.yaml"
             },
             "administrator_only": false,
@@ -160,6 +160,22 @@
                     "name": "OIDC_SERVER_APPLICATION_URL",
                     "label": "OIDC Server App URL",
                     "description": "The URL of the OIDC application pointing to RomM."
+                },
+                {
+                    "name": "DISABLE_USERPASS_LOGIN",
+                    "label": "Disable Password Login",
+                    "description": "Disabled the option to login with a password.",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true"
+                        },
+                        {
+                            "text": "No",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
                 }
             ]
         }

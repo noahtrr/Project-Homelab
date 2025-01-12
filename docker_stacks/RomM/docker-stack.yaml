@@ -20,6 +20,7 @@ services:
       - OIDC_CLIENT_SECRET=${OIDC_CLIENT_SECRET}
       - OIDC_REDIRECT_URI=${OIDC_REDIRECT_URI}
       - OIDC_SERVER_APPLICATION_URL=${OIDC_SERVER_APPLICATION_URL}
+      - DISABLE_USERPASS_LOGIN=${DISABLE_USERPASS_LOGIN}
     volumes:
       - romm_resources:/romm/resources
       - romm_redis_data:/redis-data
