@@ -11,7 +11,7 @@
             },
             "administrator_only": false,
             "name": "romm",
-            "logo": "https://github.com/noahtrr/Private-Docker/blob/main/assets/romm-dark.svg",
+            "logo": "https://romm.app/_ipx/q_80/images/blocks/logos/romm-dark.svg",
             "note": "<a href='https://github.com/rommapp/romm/' target='_blank' rel='noopener'>The RomM Project on GitHub</a>",
             "categories": ["Gaming", "organizing", "open-source"],
             "env": [
