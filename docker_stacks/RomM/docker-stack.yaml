@@ -64,4 +64,4 @@ volumes:
 
 networks:
   ${NET_NAME}:
-    external: ${EXT_NET}
+  external: ${EXT_NET}
