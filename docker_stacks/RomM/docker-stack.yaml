@@ -1,7 +1,7 @@
 services:
   romm:
     image: rommapp/romm:latest
-    container_name: romm
+    container_name: ${ROMM_NAME}
     restart: ${RP_ROMM}
     environment:
       - DB_HOST=romm-db
@@ -36,7 +36,7 @@ services:
 
   romm-db:
     image: mariadb:latest
-    container_name: romm-db
+    container_name: ${DB_NAME}
     restart: ${RP_DB}
     environment:
       - MARIADB_ROOT_PASSWORD=${DB_ROOT_PASSWD}

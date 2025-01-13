@@ -16,6 +16,11 @@
             "categories": ["Gaming", "organizing", "open-source"],
             "env": [
                 {
+                    "name": "ROMM_NAME",
+                    "label": "RomMs Container Name",
+                    "description": "Choose the name for RomMs container name."
+                },
+                {
                     "name": "DB_PASSWD",
                     "label": "Database Password",
                     "description": "Use a unique, secure password"
@@ -88,6 +93,11 @@
                             "value": "on-failure"
                         }
                     ]
+                },
+                {
+                    "name": "DB_NAME",
+                    "label": "RomMs Database Name",
+                    "description": "Choose the name for RomMs Database container name."
                 },
                 {
                     "name": "DB_ROOT_PASSWD",
