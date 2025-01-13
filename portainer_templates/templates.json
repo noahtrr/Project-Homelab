@@ -6,7 +6,7 @@
             "title": "RomM",
             "description": "Scan, enrich, and browse your game collection with a clean and responsive interface. With support for multiple platforms, various naming schemes and custom tags, RomM is a must-have for anyone who plays on emulators.",
             "repository": {
-                "url": "https://github.com/noahtrr/Private-Docker",
+                "url": "https://github.com/noahtrr/Project-Homelab",
                 "stackfile": "docker_stacks/RomM/docker-stack.yaml"
             },
             "administrator_only": false,
