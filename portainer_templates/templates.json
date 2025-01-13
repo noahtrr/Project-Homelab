@@ -16,7 +16,7 @@
             "categories": ["Gaming", "organizing", "open-source"],
             "env": [
                 {
-                    "name": "DB_PASSWORD",
+                    "name": "DB_PASSWD",
                     "label": "Database Password",
                     "description": "Use a unique, secure password"
                 },
