@@ -76,7 +76,7 @@
                 },
                 {
                     "name": "RP_ROMM",
-                    "label": "Restart Policy",
+                    "label": "RomMs Restart Policy",
                     "description": "What restart policy should RomM have?",
                     "select": [
                         {
@@ -106,7 +106,7 @@
                 },
                 {
                     "name": "RP_DB",
-                    "label": "Restart Policy",
+                    "label": "Databases Restart Policy",
                     "description": "What restart policy should RomMs database have?",
                     "select": [
                         {
