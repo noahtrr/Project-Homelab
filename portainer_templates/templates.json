@@ -190,7 +190,13 @@
             ]
         },
         {
-
+            "type": 1,
+            "title": "RomM ComM",
+            "description": "A Discord bot that integrates with the RomM API to provide information about your ROM collection and conrol RomM from Discord.",
+            "image": "idiosync000/romm-comm:latest",
+            "administrator-only": false,
+            "name": "romm-comm",
+            "logo": "https://romm.app/_ipx/q_80/images/blocks/logos/romm-mono-dark.svg"
         }
     ]
 }
