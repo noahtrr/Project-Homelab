@@ -82,11 +82,11 @@
                     "select": [
                         {
                             "text": "Yes",
-                            "value": "true"
+                            "value": ""
                         },
                         {
                             "text": "No",
-                            "value": "false",
+                            "value": "#",
                             "default": true
                         }
                     ]
