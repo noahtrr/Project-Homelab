@@ -75,6 +75,28 @@
                     "default": "8080"
                 },
                 {
+                    "name": "NET_NAME",
+                    "label": "Network Name",
+                    "description": "Enter the name of the network you wish to put RomM and the DB in.",
+                    "default": "bridge"
+                },
+                {
+                    "name": "EXT_NET",
+                    "label": "External Network",
+                    "description": "Does the Docker network already exist?",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true"
+                        },
+                        {
+                            "text": "No",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "name": "RP_ROMM",
                     "label": "RomMs Restart Policy",
                     "description": "What restart policy should RomM have?",
@@ -190,7 +212,7 @@
             ]
         },
         {
-            
+
         }
     ]
 }
