@@ -1,6 +1,6 @@
 services:
   romm:
-    image: rommapp/romm:3.7.2
+    image: rommapp/romm:latest
     container_name: romm
     restart: ${RP_ROMM}
     environment:
