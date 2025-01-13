@@ -197,7 +197,9 @@
             "administrator-only": false,
             "name": "romm-comm",
             "logo": "https://romm.app/_ipx/q_80/images/blocks/logos/romm-mono-dark.svg",
-            
+            "env": [
+                
+            ]
         }
     ]
 }
