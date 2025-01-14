@@ -226,7 +226,7 @@
                 {
                     "name": "DOMAIN",
                     "label": "Domain",
-                    "description": "Website domain for any download links, can use local ip/port if not exposing RomM to the internet (default: "No website configured")"
+                    "description": "Website domain for any download links, can use local ip/port if not exposing RomM to the internet (default: 'No website configured')"
                 },
                 {
                     "name": "REQUESTS_ENABLED",
