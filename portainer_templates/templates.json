@@ -13,7 +13,7 @@
             "name": "romm",
             "logo": "https://romm.app/_ipx/q_80/images/blocks/logos/romm-dark.svg",
             "note": "<a href='https://github.com/rommapp/romm/' target='_blank' rel='noopener'>The RomM Project on GitHub</a>",
-            "categories": ["Gaming", "organizing", "open-source"],
+            "categories": ["gaming", "organizing", "open-source"],
             "env": [
                 {
                     "name": "ROMM_NAME",
@@ -198,8 +198,131 @@
             "name": "romm-comm",
             "logo": "https://romm.app/_ipx/q_80/images/blocks/logos/romm-mono-dark.svg",
             "env": [
-                
-            ]
+                {
+                    "name": "TOKEN",
+                    "label": "Token",
+                    "description": "Your Discord bot token"
+                },
+                {
+                    "name": "GUILD",
+                    "label": "Guild ID",
+                    "description": "Discord server (guild) ID"
+                },
+                {
+                    "name": "API_URL",
+                    "label": "API Url",
+                    "description": "Base URL for local Romm instance (http://ip:port)"
+                },
+                {
+                    "name": "USER",
+                    "label": "Username",
+                    "description": "API authentication username"
+                },
+                {
+                    "name": "PASS",
+                    "label": "Password",
+                    "description": "API authentication password"
+                },
+                {
+                    "name": "DOMAIN",
+                    "label": "Domain",
+                    "description": "Website domain for any download links, can use local ip/port if not exposing RomM to the internet (default: "No website configured")"
+                },
+                {
+                    "name": "REQUESTS_ENABLED",
+                    "label": "Requests Enabled",
+                    "description": "Enable request commands (default: true)",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true",
+                            "default": true
+                        },
+                        {
+                            "text": "No",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "name": "IGDB_CLIENT_ID",
+                    "label": "IGDB Client ID",
+                    "description": "IGDB login info for requests metadata (can be the same one used in RomM)"
+                },
+                {
+                    "name": "IGDB_CLIENT_SECRET",
+                    "label": "IGDB Client Secret",
+                    "description": "IGDB login info for requests metadata (can be the same one used in RomM)"
+                },
+                {
+                    "name": "ENABLE_USER_MANAGER",
+                    "label": "Enable User Manager",
+                    "description": "Enables user manager module (default: true)",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true",
+                            "default": true
+                        },
+                        {
+                            "text": "No",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "name": "AUTO_REGISTER_ROLE_ID",
+                    "label": "Auto Register Role ID",
+                    "description": "Discord role ID used for linking Discord users to RomM users and registering new RomM users if granted to Discord user (if user manager enabled)"
+                },
+                {
+                    "name": "UPDATE_VOICE_NAMES",
+                    "label": "Update Voice Names",
+                    "description": "Enable/disable voice channel stats (default: true)",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true",
+                            "default": true
+                        },
+                        {
+                            "text": "No",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "name": "CHANNEL_ID",
+                    "label": "Channel ID",
+                    "description": "Channel ID for API sync result and user manager notifications to be sent to (if enabled above) and user manager log messages"
+                },
+                {
+                    "name": "SHOW_API_SUCCESS",
+                    "label": "Show API Success",
+                    "description": "Show API sync results and error messages in Discord (default: false)",
+                    "select": [
+                        {
+                            "text": "Yes",
+                            "value": "true"
+                        },
+                        {
+                            "text": "No",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                }
+            ],
+            "volumes": [
+                {
+                    "container": "/app/data",
+                    "bind": "/path/to/datadir"
+                }
+            ],
+            "restart_policy": "unless-stopped",
+            "hostname": "romm-comm",
+            "note": "<a href='https://github.com/idio-sync/romm-comm' target='_blank' rel='noopener'>The RomM-ComM Project on GitHub</a>",
+            "categories": ["gaming", "open-source", "discord"]
         }
     ]
 }
