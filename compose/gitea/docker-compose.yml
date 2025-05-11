@@ -19,7 +19,7 @@ services:
       tsdproxy.enable: "true"
       tsdproxy.name: "gitea"
       tsdproxy.autodetect: "false"
-      tsdproxy.port: "3002"
+      tsdproxy.port: "3003"
       tsdproxy.dash.icon: "sh/gitea"
       glance.name: Gitea
       glance.icon: sh:gitea
