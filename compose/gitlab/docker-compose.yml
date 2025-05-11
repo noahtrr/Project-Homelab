@@ -3,8 +3,7 @@ services:
   gitlab:
     image: gitlab/gitlab-ce:latest
     ports:
-      - "8084:80"
-      - "8443:443"
+      - "8085:80"
       - "822:22"
     restart: unless-stopped
     container_name: template
@@ -16,7 +15,7 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         # Add any other gitlab.rb configuration here, each on its own line
-        external_url 'https://gitlab.ojos-sole.ts.net'
+        external_url 'http://gitlab.ojos-sole.ts.net:8085'
         gitlab_rails['gitlab_shell_ssh_port'] = 822
     labels:
       tsdproxy.enable: "true"
