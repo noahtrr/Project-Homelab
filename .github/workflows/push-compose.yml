@@ -26,11 +26,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Deploy Docker Compose projects to raspi4b
-      - name: Deploy Docker Compose projects to raspi4b
-        uses: webfactory/ssh-agent@v0.9.0
+      - uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Deploy Docker Compose projects to raspi4b
+      - name: Deploy Docker Compose projects to raspi4b        
         run: |
           # Loop through all subdirectories containing docker-compose.yml
           for dir in $(find . -type f -name 'docker-compose.yml' -exec dirname {} \;); do
