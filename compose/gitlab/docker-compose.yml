@@ -1,7 +1,7 @@
 name: gitlab
 services:
   gitlab:
-    image: gitlab/gitlab-ce:latest-ce.0
+    image: gitlab/gitlab-ce:latest
     ports:
       - "8084:80"
       - "8443:443"
