@@ -4,7 +4,7 @@ services:
     image: docker.gitea.com/gitea:latest
     ports:
       - "222:22"
-      - "3002:3000"
+      - "3003:3000"
     restart: unless-stopped
     container_name: gitea
     hostname: gitea
