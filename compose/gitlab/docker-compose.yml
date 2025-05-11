@@ -15,7 +15,7 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         # Add any other gitlab.rb configuration here, each on its own line
-        external_url 'http://gitlab.ojos-sole.ts.net:8085'
+        external_url 'https://gitlab.ojos-sole.ts.net'
         gitlab_rails['gitlab_shell_ssh_port'] = 822
     labels:
       tsdproxy.enable: "true"
