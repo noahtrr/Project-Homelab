@@ -22,7 +22,7 @@ services:
       tsdproxy.enable: "true"
       tsdproxy.name: "gitlab"
       tsdproxy.autodetect: "false"
-      tsdproxy.port: "8443"
+      tsdproxy.port: "8085"
       tsdproxy.dash.icon: "sh/gitlab"
       glance.name: Gitlab
       glance.icon: sh:gitlab
