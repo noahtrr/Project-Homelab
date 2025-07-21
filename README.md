@@ -14,4 +14,13 @@ This repository is supposed to resemble my Docker homelab architecture which is 
     - ADBLOCKING
     - Connect to the homelab from anywhere
     - Be able to throw the pi into any network and it just working 
+
+# Planned additions
+
+    - FOSSFlow
+    - Grafana
+    - Prometheus
+    - RomM
+    - Navidrome
+    - Homepage
     
