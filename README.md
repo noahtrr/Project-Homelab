@@ -23,4 +23,9 @@ This repository is supposed to resemble my Docker homelab architecture which is 
     - RomM
     - Navidrome
     - Homepage
+    - Immich
+    - NetBox
+    - Vaultwarden
+    - Komodo
+    - Gotify
     
