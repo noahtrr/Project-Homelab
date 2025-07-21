@@ -20,7 +20,6 @@ This repository is supposed to resemble my Docker homelab architecture which is 
     - FossFLOW
     - Grafana
     - Prometheus
-    - RomM
     - Navidrome
     - Homepage
     - Immich
