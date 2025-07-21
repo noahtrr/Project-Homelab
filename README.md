@@ -17,7 +17,7 @@ This repository is supposed to resemble my Docker homelab architecture which is 
 
 # Planned additions
 
-    - FOSSFlow
+    - FossFLOW
     - Grafana
     - Prometheus
     - RomM
